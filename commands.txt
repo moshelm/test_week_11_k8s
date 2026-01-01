@@ -3,3 +3,11 @@ minikube start
 
 minikube status
 
+docker build -t my_app .
+
+docker image ls
+
+docker tag my_app:v1 moshe5434/k8s:v1.0
+
+docker push moshe5434/k8s:v1.0
+
