@@ -14,3 +14,8 @@ docker push moshe5434/k8s:v1.0
 kubectl apply -f pod.yaml 
 
 kubectl get pods
+
+kubectl apply -f service.yaml 
+
+kubectl get services
+
