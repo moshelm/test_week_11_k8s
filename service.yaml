@@ -4,7 +4,8 @@ metadata:
   name: app-service
 spec:
   selector:
-    name: app-service
+    app.kubernetes.io/name: proxy
   ports:
-    - port: 8080
-      targetPort: 8080    
+  - name: stream
+    port: 8080
+    targetPort: 8080    
